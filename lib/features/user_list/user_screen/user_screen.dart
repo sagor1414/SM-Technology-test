@@ -64,12 +64,13 @@ class _UserScreenState extends ConsumerState<UserScreen> {
                 );
               } else {
                 return const Center(
-                    child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    CircularProgressIndicator(),
-                  ],
-                ));
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CircularProgressIndicator(),
+                    ],
+                  ),
+                );
               }
             },
           ),
