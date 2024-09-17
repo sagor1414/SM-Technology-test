@@ -33,6 +33,7 @@ class _UserScreenState extends ConsumerState<UserScreen> {
 
   Future<void> _refreshUsers() async {
     // Reset the state and fetch the users again
+    // ignore: invalid_use_of_protected_member, invalid_use_of_visible_for_testing_member
     ref.read(userProvider.notifier).state = UserState(
       users: [],
       hasMore: true,
